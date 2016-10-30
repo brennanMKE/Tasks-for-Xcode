@@ -1,8 +1,18 @@
 # Tasks for Xcode
 
-Various tasks are necessary for working with Xcode projects. The most common tasks are related to managing dependencies with [CocoaPods]. Instead of being focused on iOS and Swift a developer must learn about installing and managing Ruby gems which is the underlying technlogy of CocoaPods.
+Various tasks are necessary for working with Xcode projects. 
 
-The linked instructions can get you started with [CocoaPods] and managing a [Gemfile] so you can keep your tools in sync across your team.
+The most common tasks include the following:
+
+* Editing markdown (README.md)
+* Editing Podfile/Gemfile
+* Running tasks to install, build and test
+* Managing image assets (Sketch, PaintCode, etc)
+* Managing other resources
+
+The more complex tasks are related to managing dependencies with [CocoaPods]. Instead of being focused on iOS and Swift a developer must learn about installing and managing Ruby gems which is the underlying technology of CocoaPods.
+
+The linked instructions below can get you started with [CocoaPods] and managing a [Gemfile] so you can keep your tools in sync across your team.
 
 ## Getting Started
 
@@ -38,6 +48,8 @@ Going a step further, [Visual Studio Code] can be used. It is free and runs on t
 * Integrated Terminal to run commands and show output
 
 See: [iOS Common Files] (thanks to [Orta])
+
+![](vscode.png)
 
 With the [tasks.sh] shell script and [tasks.json] to configure VSCode commands can be run from the task runner with key combination of cmd-shift-r. Selecting one of the configured tasks will start the script for that task with the output showing in the embedded console. You can do all of your work between Xcode and VSCode.
 

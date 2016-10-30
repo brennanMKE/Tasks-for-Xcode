@@ -50,7 +50,7 @@
       ]
     },
     {
-      "taskName": "G: pod-install",
+      "taskName": "F: pod-install",
       "suppressTaskName": true,
       "isBuildCommand": false,
       "args": [
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "taskName": "H: pod-update",
+      "taskName": "G: pod-update",
       "suppressTaskName": true,
       "isBuildCommand": false,
       "args": [
