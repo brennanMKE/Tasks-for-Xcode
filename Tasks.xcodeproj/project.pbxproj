@@ -393,6 +393,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -443,6 +444,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -472,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 218197A88EEAEDD2EDC30ABF /* Pods-Tasks.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M3FCT79SM9;
 				INFOPLIST_FILE = Tasks/Info.plist;
@@ -487,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1066D6F1F214412E90FE170D /* Pods-Tasks.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M3FCT79SM9;
 				INFOPLIST_FILE = Tasks/Info.plist;
@@ -502,7 +506,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BD858CF01D9E4506ED6C7DD0 /* Pods-TasksTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = M3FCT79SM9;
 				INFOPLIST_FILE = TasksTests/Info.plist;
@@ -518,7 +522,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED79237800DB01056DF6C045 /* Pods-TasksTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = M3FCT79SM9;
 				INFOPLIST_FILE = TasksTests/Info.plist;

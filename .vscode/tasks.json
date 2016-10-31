@@ -42,7 +42,15 @@
       ]
     },
     {
-      "taskName": "E: bundle-install",
+      "taskName": "E: all",
+      "suppressTaskName": true,
+      "isBuildCommand": false,
+      "args": [
+        "${workspaceRoot}/tasks.sh setup"
+      ]
+    },
+    {
+      "taskName": "F: bundle-install",
       "suppressTaskName": true,
       "isBuildCommand": false,
       "args": [
@@ -50,7 +58,7 @@
       ]
     },
     {
-      "taskName": "F: pod-install",
+      "taskName": "G: pod-install",
       "suppressTaskName": true,
       "isBuildCommand": false,
       "args": [
@@ -58,7 +66,7 @@
       ]
     },
     {
-      "taskName": "G: pod-update",
+      "taskName": "H: pod-update",
       "suppressTaskName": true,
       "isBuildCommand": false,
       "args": [

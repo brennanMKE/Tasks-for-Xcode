@@ -2,6 +2,8 @@
 
 set -e
 
+Command="$1"
+
 ProjectDir="`dirname \"$0\"`"
 Workspace="Tasks.xcworkspace"
 Scheme="Tasks"
@@ -75,9 +77,10 @@ run_all() {
     run_bundle_install
     run_pod_install
     run_build
+    run_tests
 }
 
-case "$1" in
+case "${Command}" in
     build)
         run_build
         ;;
