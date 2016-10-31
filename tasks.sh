@@ -71,6 +71,16 @@ run_setup() {
     run_pod_install
 }
 
+run_open() {
+    if [ "" == "${Workspace}" ]; then
+        echo "Opening Project..."
+        open "${Project}"
+    else
+        echo "Opening Workspace..."
+        open "${Workspace}"
+    fi
+}
+
 run_all() {
     echo "Setting up..."
     run_clean
@@ -92,6 +102,9 @@ case "${Command}" in
         ;;
     setup)
         run_setup
+        ;;
+    open)
+        run_open
         ;;
     all)
         run_all
