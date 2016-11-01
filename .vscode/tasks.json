@@ -8,10 +8,10 @@
   "args": [
     "-c"
   ],
+  "suppressTaskName": true,
   "tasks": [
     {
       "taskName": "A: Build iOS Project",
-      "suppressTaskName": true,
       "isBuildCommand": true,
       "args": [
         "${workspaceRoot}/tasks.sh build"
@@ -19,7 +19,6 @@
     },
     {
       "taskName": "B: Run Tests",
-      "suppressTaskName": true,
       "isBuildCommand": false,
       "args": [
         "${workspaceRoot}/tasks.sh test"
@@ -27,7 +26,6 @@
     },
     {
       "taskName": "C: Clean Build",
-      "suppressTaskName": true,
       "isBuildCommand": false,
       "args": [
         "${workspaceRoot}/tasks.sh clean"
@@ -35,7 +33,6 @@
     },
     {
       "taskName": "D: Set Up Dependencies",
-      "suppressTaskName": true,
       "isBuildCommand": false,
       "args": [
         "${workspaceRoot}/tasks.sh setup"
@@ -43,7 +40,6 @@
     },
     {
       "taskName": "E: Open Project/Workspace",
-      "suppressTaskName": true,
       "isBuildCommand": false,
       "args": [
         "${workspaceRoot}/tasks.sh open"
@@ -51,7 +47,6 @@
     },
     {
       "taskName": "F: Run All",
-      "suppressTaskName": true,
       "isBuildCommand": false,
       "args": [
         "${workspaceRoot}/tasks.sh all"
@@ -59,7 +54,6 @@
     },
     {
       "taskName": "G: Install Gems",
-      "suppressTaskName": true,
       "isBuildCommand": false,
       "args": [
         "${workspaceRoot}/tasks.sh bundle-install"
@@ -67,7 +61,6 @@
     },
     {
       "taskName": "H: Install CocoaPod Dependencies",
-      "suppressTaskName": true,
       "isBuildCommand": false,
       "args": [
         "${workspaceRoot}/tasks.sh pod-install"
@@ -75,7 +68,6 @@
     },
     {
       "taskName": "I: Update CocoaPod Dependencies",
-      "suppressTaskName": true,
       "isBuildCommand": false,
       "args": [
         "${workspaceRoot}/tasks.sh pod-update"
