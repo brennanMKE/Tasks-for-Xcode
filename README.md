@@ -75,7 +75,9 @@ Xcode has number key bindings for all of the sections in the left side bar and s
 
 ## Integrated Terminal
 
-Using the integrated terminal is easy though it may need to be configured. If your computer was set up by IT they may have tried to lock it down by setting your shell to `/bin/false`. It happened to me. I simply ran `chsh -s /bin/bash` to set it correctly. I also usually configure `~/.bash_profile` and don't use `~/.profile` or `~/.bashrc` which are used sometimes. It helps to create a symlink to one of these files from the other paths so you always have your configured shell. Setting the `$PATH` so that CocoaPods is accessible was important for these tasks. If you find your integrated terminal in VSCode is not opening it could be the path for your working folder has special characters which is causing it to fail or your shell is not configured properly. Check the public GitHub repository for issues related to this problem to potentially find a solution.
+Using the integrated terminal is easy though it may need to be configured. If your computer was set up by IT they may have tried to lock it down by setting your shell to `/bin/false`. It happened to me. I simply ran `chsh -s /bin/bash` to set it correctly. I also usually configure `~/.bash_profile` and don't change `~/.bashrc` which is used for interactive shells, like the one VSCode creates. I create a symlink for `.bashrc` to `.bash_profile` so I always have my configuration settings. Setting the `$PATH` so that CocoaPods is accessible is important for these tasks. 
+
+If you find your integrated terminal in VSCode is not opening it could be the path for your working folder has special characters which is causing it to fail or your shell is not configured properly. Check the [VSCode GitHub repository] for issues related to this problem to potentially find a solution.
 
 ## Source Control Not Included
 
@@ -92,6 +94,7 @@ Brennan Stehling - 2016
 [Gemfiles]: https://gist.github.com/brennanMKE/dff7b89836af5e51bcda0bda89967617
 [Gemfiles for CocoaPod Versions]: https://gist.github.com/brennanMKE/dff7b89836af5e51bcda0bda89967617
 [Visual Studio Code]: http://code.visualstudio.com/
+[VSCode GitHub repository]: https://github.com/Microsoft/vscode/
 [iOS Common Files]: https://marketplace.visualstudio.com/items?itemName=Orta.vscode-ios-common-files
 [Orta]: http://twitter.com/orta
 [tasks.sh]: tasks.sh
