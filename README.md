@@ -32,26 +32,28 @@ You may not use a Gemfile and in that case you may not use the `bundle` command 
 
 ## Shell Scripting
 
-In order to make a project easier to work with among many projects it is best script the common tasks. When a project is first clone from a git repository the setup routines. For CocoaPods managed with a Gemfile these tasks include installing the bundle and then the pods. Then from time to time as the pods are updated to new versions the `pod install` or `pod update` command would used.
+In order to make a project easier to work with among many projects it is best script the common tasks. When a project is first cloned from a git repository the setup routines will prepare the project for any files which are not managed by source control. For CocoaPods managed with a Gemfile these tasks include installing the bundle and then the pods. Then from time to time as the pods are updated to new versions the `pod install` or `pod update` commands are used.
 
 For many who prefer to stay in Xcode and work with Swift these commands are a bit much. And when there are nuances between multiple projects it can be easy to run the wrong command. A common mistake is running `pod install` when `bundle exec pod install` should be used.
 
 By using a shell script which is managed with source control for each project along with a Gemfile it is possible to make a project much easier to manage. If a new requirement is introduced it can be added to the shell script and even without knowing about it the team will benefit from the update without their work being distrupted.
 
+Depending on the size of the team, one person could be responsible for the build infrastructure for the project. This person would manage these scripts, document them and educate the team on using them effectively. And while there may be differences across teams, the core tasks would appear to be the same and the teams would benefit from a common set of tasks across projects.
+
 ## Tasks with Visual Studio Code
 
-Going a step further, [Visual Studio Code] can be used. It is free and runs on the Mac as well as Linux and Windows. The following reasons make it an excellent companion for development with Xcode.
+Going a step further, [Visual Studio Code] can be used as a task runner. It is free and runs on the Mac as well as Linux and Windows. The following reasons make it an excellent companion for development with Xcode.
 
 * Strong support for markdown to ease documentation creation
 * Plugin support for common files in iOS
 * Syntax highlighting for Podfile & Gemfile
 * Integrated Terminal to run commands and show output
 
-See: [iOS Common Files] (thanks to [Orta])
+See the [iOS Common Files] plugin, courtsey of [Orta].
 
 ![](vscode.png)
 
-With the [tasks.sh] shell script and [tasks.json] to configure VSCode commands can be run from the task runner with key combination of cmd-shift-r. Selecting one of the configured tasks will start the script for that task with the output showing in the embedded console. You can do all of your work between Xcode and VSCode.
+With the [tasks.sh] shell script and [tasks.json] to configure VSCode commands can be executed from the task runner with key combination of cmd-e. (See Key Bindings below) Selecting one of the configured tasks will start the script for that task with the output showing in the embedded console. You can do all of your work between Xcode and VSCode.
 
 Currently the following commands are supported.
 
@@ -71,7 +73,7 @@ While the task runner provides a helpful interface it is also possible to run th
 
 ## Key Bindings
 
-Xcode has number key bindings for all of the sections in the left side bar and switching between these sections is very easy. It is possible to configure VSCode to work in the same way. It can be done from the top menu under *Preferences*. Using [keybindings.json] to configure your key bindings will make VSCode work a lot like Xcode. And executing tasks can be done with CMD-E with this configuration as well as CMD-1 through CMD-5 to change between sections in the side bar and CMD-0 to toggle the side bar. 
+Xcode has number key bindings for all of the sections in the left side bar and switching between these sections is very easy. It is possible to configure VSCode to work in the same way to make using VSCode feel familiar. It can be done from the top menu under *Preferences*. Using [keybindings.json] to configure your key bindings will make VSCode work a lot like Xcode. And executing tasks can be done with cmd-e with this configuration as well as cmd-1 through cmd-5 to change between sections in the side bar and cmd-0 to toggle the side bar. 
 
 ## Integrated Terminal
 
