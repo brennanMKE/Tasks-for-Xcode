@@ -73,6 +73,10 @@ While the task runner provides a helpful interface it is also possible to run th
 
 Xcode has number key bindings for all of the sections in the left side bar and switching between these sections is very easy. It is possible to configure VSCode to work in the same way. It can be done from the top menu under *Preferences*. Using [keybindings.json] to configure your key bindings will make VSCode work a lot like Xcode. And executing tasks can be done with CMD-E with this configuration as well as CMD-1 through CMD-5 to change between sections in the side bar and CMD-0 to toggle the side bar. 
 
+## Integrated Terminal
+
+Using the integrated terminal is easy though it may need to be configured. If your computer was set up by IT they may have tried to lock it down by setting your shell to `/bin/false`. It happened to me. I simply ran `chsh -s /bin/bash` to set it correctly. I also usually configure `~/.bash_profile` and don't use `~/.profile` or `~/.bashrc` which are used sometimes. It helps to create a symlink to one of these files from the other paths so you always have your configured shell. Setting the `$PATH` so that CocoaPods is accessible was important for these tasks. If you find your integrated terminal in VSCode is not opening it could be the path for your working folder has special characters which is causing it to fail or your shell is not configured properly. Check the public GitHub repository for issues related to this problem to potentially find a solution.
+
 ## Source Control Not Included
 
 Keeping the scripts for these tasks in sync with the rest of the project should be done with source control. Including a set of tasks for working with `git` would allow for pulling the latest changes, perhaps only doing so when the current branch is `master` and there are no local changes. A simple `git pull` may be all that is needed or `git pull --rebase` if that works better with how you work with `git`. Managing a local `git` repository is beyond the scope of this sample project.
