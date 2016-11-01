@@ -69,6 +69,10 @@ Each of these commands can be configured with variables at the top of the shell 
 
 While the task runner provides a helpful interface it is also possible to run the tasks with the script from the command-line by passing in the argument used to run as task. The same scripts you use daily for development can also be used for continuous integration. Specifically the test task will execute the tests with output which your CI server can use to evaluate each of the tests. 
 
+## Key Bindings
+
+Xcode has number key bindings for all of the sections in the left side bar and switching between these sections is very easy. It is possible to configure VSCode to work in the same way. It can be done from the top menu under *Preferences*. Using [keybindings.json] to configure your key bindings will make VSCode work a lot like Xcode. And executing tasks can be done with CMD-E with this configuration as well as CMD-1 through CMD-5 to change between sections in the side bar and CMD-0 to toggle the side bar. 
+
 ## Source Control Not Included
 
 Keeping the scripts for these tasks in sync with the rest of the project should be done with source control. Including a set of tasks for working with `git` would allow for pulling the latest changes, perhaps only doing so when the current branch is `master` and there are no local changes. A simple `git pull` may be all that is needed or `git pull --rebase` if that works better with how you work with `git`. Managing a local `git` repository is beyond the scope of this sample project.
@@ -88,3 +92,4 @@ Brennan Stehling - 2016
 [Orta]: http://twitter.com/orta
 [tasks.sh]: tasks.sh
 [tasks.json]: .vscode/tasks.json
+[keybindings.json]: keybindings.json

@@ -1,0 +1,57 @@
+[
+  {
+    "key": "cmd+1",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "cmd+2",
+    "command": "workbench.view.search"
+  },
+  {
+    "key": "cmd+3",
+    "command": "workbench.view.git"
+  },
+  {
+    "key": "cmd+4",
+    "command": "workbench.view.debug"
+  },
+  {
+    "key": "cmd+5",
+    "command": "workbench.view.extensions"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.debug.start",
+    "when": "!inDebugMode"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.debug.restart",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.tasks.runTask"
+  },
+  {
+    "key": "cmd+.",
+    "command": "workbench.action.debug.stop",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+b",
+    "command": "workbench.action.tasks.build"
+  },
+  {
+    "key": "cmd+0",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+-",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "cmd++",
+    "command": "workbench.action.navigateForward"
+  }
+]
