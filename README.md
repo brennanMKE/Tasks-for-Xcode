@@ -77,7 +77,13 @@ Xcode has number key bindings for all of the sections in the left side bar and s
 
 ## Integrated Terminal
 
-Using the integrated terminal is easy though it may need to be configured. If your computer was set up by IT they may have tried to lock it down by setting your shell to `/bin/false`. It happened to me. I simply ran `chsh -s /bin/bash` to set it correctly. I also usually configure `~/.bash_profile` and don't change `~/.bashrc` which is used for interactive shells, like the one VSCode creates. I create a symlink for `.bashrc` to `.bash_profile` so I always have my configuration settings. Setting the `$PATH` so that CocoaPods is accessible is important for these tasks. 
+Using the integrated terminal is easy though it may need to be configured. If your computer was set up by IT they may have tried to lock it down by setting your shell to `/bin/false`. It happened to me. I simply ran `chsh -s /bin/bash` to set it correctly. If you are `bash` you may have configured your `.bash_profile` but nto `.bashrc` which is used for interactive shells like the one VSCode launches. You can configure your `.bash_profile` and in your `.bashrc` you can simply add the following line.
+
+```sh
+[ -f $HOME/.bash_profile ] && . $HOME/.bash_profile
+```
+
+You will want the `$PATH` set so you can access everything you have installed for development, such a CocoaPods. 
 
 If you find your integrated terminal in VSCode is not opening it could be the path for your working folder has special characters which is causing it to fail or your shell is not configured properly. Check the [VSCode GitHub repository] for issues related to this problem to potentially find a solution.
 
